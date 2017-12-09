@@ -1,0 +1,17 @@
+#ifndef GREETER_H
+#define GREETER_H
+
+#include <string>
+using namespace std;
+
+class greeter {
+    const unsigned int version_ = $ENV{TRAVIS_BUILD_NUMBER};
+
+public:
+    virtual ~greeter() = default;
+
+    virtual string greet() const;
+    unsigned int version() const;
+};
+
+#endif // GREETER_H

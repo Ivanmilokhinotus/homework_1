@@ -1,0 +1,3 @@
+#pragma once
+
+#define VERSION $ENV{TRAVIS_BUILD_NUMBER}
